@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>about</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<img src="s6.jpg" alt="" width="150" height="60">
+<div class="a">
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="team.html">TEAM</a>
+<a href="about.html">ABOUT</a>
+<a href="news.html">NEWS</a>
+<a href="reachus.html">REACHUS</a>
+</div>
+ <div class="container">
+ <marquee scrollamount="40"
+direction="down"
+behavior="slide"> <img class="a" src="s4.jpg" alt="Cinque Terre" width="1000" height="300">
+  <div class="center">About</div>
+</marquee>
+  
+
+
+</div>
+<div class="c">
+
+</br>
+<h1>. . .</h1>
+<h1>Supporting visionary entrepreneurs
+across diverse sectors.</h1>
+<hr class="a">
+</div>
+<p><font size="6"><img src="01.jpg" align="middle">India focused From seed-growth capital</font></p>
+</div>
+
+<h1>Sectors we invest in:</h1>
+<hr class="a">
+<a href="">Consumer</a>
+<a href="">Education</a>
+<a href="">Finance</a>
+<a href="">Healthcare</a>
+<a href="">Industrials</a>
+<a href="">Internet </a>
+<a href="">ITServices</a>
+<a href="">Logistics</a>
+<a href="">Mobile</a>
+<a href="">SaaS</a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="02.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="03.jpg" style="width:130%">
+  
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+   
+</div>
+
+
+
+<hr class="a">
+<table>
+<form>
+<tr>
+<th>Discover</th>
+<th>Connect</th>
+<th>Subscribe to our news letter</th>
+</tr>
+<tr>
+<td><a href="portfolio.html">Portfolio</a></td>
+<td>+91 124 4965500</td>
+<td><label for="sub">Type your email address here please</label></td>
+</tr>
+<tr>
+<td><a href="team.html">Team</a></td>
+<td>info@saifpartners.com</td>
+<td>
+<input type="text" id="sub" name="sub" required></td>
+</tr>
+<tr>
+<td><a href="about.html">About</a></td>
+</tr>
+<tr>
+<td><a href="news.html">News</a></td>
+<td></td>
+<td><button onclick="myFunction()" type="submit" value="SUBSCRIBE NOW">SUBSCRIBE NOW</button?
+</tr>
+<tr>
+<td><a href="reachus.html">Reach Us</a></td>
+<td></td>
+<td><p id="demo"></p>
+</tr>
+</form>
+</table>
+
+<hr class="a">
+
+<p class="a">© 2017 SAIF Partners. All Rights Reserved</p>
+<br>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Thankyou, you have subscribed to our news letter";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

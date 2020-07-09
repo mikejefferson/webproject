@@ -1,0 +1,134 @@
+﻿<html>
+<head>
+<title>team</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<a href=home.html><img src="s6.jpg" alt="" width="150" height="60">
+<div class="a">
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="team.html">TEAM</a>
+<a href="about.html">ABOUT</a>
+<a href="news.html">NEWS</a>
+<a href="reachus.html">REACHUS</a>
+</div>
+  <div class="container">
+ <marquee scrollamount="40"
+direction="down"
+behavior="slide"> <img class="a" src="s3.jpg" alt="Cinque Terre" width="1000" height="300">
+  <div class="center">Team</div>
+</marquee>
+
+</div>
+</br>
+<h1>. . .</h1>
+<h1>We believe in entrepreneurial spirit and bring a full range of experience.</h1>
+<hr class="a">
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">All</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Investment team</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Investment advisors</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <a href="1.html"target="_blank"><img src="1.jpg"></a>
+<a href="2.html"target="_blank"><img src="2.jpg"></a>
+<a href="3.html"target="_blank"><img src="3.jpg"></a>
+<a href="4.html"target="_blank"><img src="4.jpg"></a>
+<a href="5.html"target="_blank"><img src="5.jpg"></a>
+<a href="6.html"target="_blank"><img src="6.jpg"></a>
+<a href="7.html"target="_blank"><img src="7.jpg"></a>
+<a href="8.html"target="_blank"><img src="8.jpg"></a>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <a href="1.html"target="_blank"><img src="1.jpg"></a>
+<a href="2.html"target="_blank"><img src="2.jpg"></a>
+<a href="3.html"target="_blank"><img src="3.jpg"></a>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+ <a href="4.html"target="_blank"><img src="4.jpg"></a>
+<a href="5.html"target="_blank"><img src="5.jpg"></a>
+<a href="6.html"target="_blank"><img src="6.jpg"></a>
+<a href="7.html"target="_blank"><img src="7.jpg"></a>
+<a href="8.html"target="_blank"><img src="8.jpg"></a>
+</div>
+
+
+
+
+<hr class="a">
+<p class="a">Please note that the term ‘SAIF Partners’ or ‘SAIF’ is used and referred
+ to in the website generally for ease of reference and does not refer to any one entity
+ or organisation. The teams, investing companies and addresses mentioned here may belong
+ to or form part of different and independent organisations and entities having separate
+ legal existence. Members of the investment advisory team noted above are 
+engaged with Light Ray Advisors LLP </p>
+<hr class="a">
+<table>
+<form>
+<tr>
+<th>Discover</th>
+<th>Connect</th>
+<th>Subscribe to our news letter</th>
+</tr>
+<tr>
+<td><a href="portfolio.html">Portfolio</a></td>
+<td>+91 124 4965500</td>
+<td><label for="sub">Type your email address here please</label></td>
+</tr>
+<tr>
+<td><a href="team.html">Team</a></td>
+<td>info@saifpartners.com</td>
+<td>
+<input type="text" id="sub" name="sub" required></td>
+</tr>
+<tr>
+<td><a href="about.html">About</a></td>
+</tr>
+<tr>
+<td><a href="news.html">News</a></td>
+<td></td>
+<td><button onclick="myFunction()" type="submit" value="SUBSCRIBE NOW">SUBSCRIBE NOW</button?
+</tr>
+<tr>
+<td><a href="reachus.html">Reach Us</a></td>
+<td></td>
+<td><p id="demo"></p>
+</tr>
+</form>
+</table>
+
+<hr class="a">
+
+<p class="a">© 2017 SAIF Partners. All Rights Reserved</p>
+<br>
+</div>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Thankyou, you have subscribed to our news letter";
+}
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
